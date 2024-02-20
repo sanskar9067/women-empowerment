@@ -43,6 +43,7 @@
     <p>Thank you for supporting our mission to uplift and empower rural women across India.</p>
     <hr>
     <h2>Screenshot</h2>
+    <img src="https://github.com/sanskar9067/women-empowerment/blob/main/Screenshot%20(146).png">
     <h2>Contact Us</h2>
     <p>For any inquiries or feedback, please contact us at <a href="mailto:email@example.com">email@example.com</a>.</p>
 </body>
