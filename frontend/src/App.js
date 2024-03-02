@@ -12,6 +12,8 @@ import Courses from './pages/Courses';
 import Blogs from './pages/Blogs';
 import About from './pages/About';
 import Inspiring from './pages/Inspiring';
+import Recruiter from './pages/Recruiter';
+import Chat from './pages/Chat';
 
 function App() {
   return (
@@ -31,6 +33,8 @@ function App() {
             <Route path="/blogs" element={<Blogs />} />
             <Route path="/about" element={<About />} />
             <Route path="/inspiring" element={<Inspiring />} />
+            <Route path="/contactrecruiter" element={<Recruiter />} />
+            <Route path="/chat" element={<Chat />} />
           </Routes>
         </div>
       </BrowserRouter>

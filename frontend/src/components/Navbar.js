@@ -51,6 +51,7 @@ export default function Navbar() {
                                                     <Link className="nav-item nav-link" to="/blogs">Blogs</Link>
                                                     <Link className="nav-item nav-link" to="/inspiring">Inspiring Figures</Link>
                                                     <Link className="nav-item nav-link" to="/about">About Us</Link>
+                                                    <Link className="nav-item nav-link" to="/contactrecruiter">Contact Recruiter</Link>
                                                     <Link className='btn btn-light' to="/" onClick={handleLogout} >Logout</Link>
                                                 </>)
                                             }

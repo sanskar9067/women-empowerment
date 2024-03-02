@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import { useNavigate, useParams } from 'react-router-dom'
+import { Link, useNavigate, useParams } from 'react-router-dom'
 import axios from 'axios';
 
 export default function EmployeeDetails() {
@@ -63,6 +63,7 @@ export default function EmployeeDetails() {
                             <button className="btn btn-success mt-3 d-block mx-auto" onClick={() => handleMessage(detail.phoneno)}><i class="fa-brands fa-whatsapp m-2"></i>Hire through Whatsapp</button>
                             <button className="btn btn-success mt-3 d-block mx-auto" onClick={() => hiring(detail._id)}>Confirm Hiring Process</button>
                         </div>
+                        <Link to="/chat" className='btn btn-dark'>Meesage the employee</Link>
                     </div>
                 </div>
 

@@ -6,9 +6,12 @@ import multer from 'multer';
 import userModel from './models/userModel.js';
 import JWT from 'jsonwebtoken';
 import womenModel from './models/womenModel.js';
+import { Server } from 'socket.io';
+import http from 'http';
 
 const app = express();
 const PORT = 3001;
+
 
 app.use(morgan(`dev`));
 app.use(express.json());
@@ -17,9 +20,37 @@ app.use(express.static('uploads'));
 
 connectDB();
 
+const server = http.createServer(app);
+
+const io = new Server(server, {
+    cors: {
+        origin: "http://localhost:3000",
+        methods: ["GET", "POST"]
+    }
+})
+
 app.get("/", (req, res) => {
     res.send("Hello");
 })
+
+io.on("connection", (socket) => {
+    console.log(`connected to socket: ${socket.id}`);
+
+    socket.on("disconnect", () => {
+        console.log("User Disconnected", socket.id);
+    })
+
+    socket.on("join_room", (data) => {
+        socket.join(data);
+    });
+
+    socket.on("send_message", (data) => {
+        socket.to(data.room).emit("receive_message", data);
+    });
+})
+
+
+
 
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
@@ -207,6 +238,17 @@ app.get("/getyourjob", (req, res) => {
     }
 })
 
-app.listen(PORT, () => {
+app.get("/getrecruiter", (req, res) => {
+    try {
+        userModel.find({ isOrganization: "yes" })
+            .then(rec => res.json(rec))
+            .catch(err => console.log(err));
+    }
+    catch (err) {
+        console.log(err);
+    }
+})
+
+server.listen(PORT, () => {
     console.log(`Server started on port: ${PORT}`);
 })
