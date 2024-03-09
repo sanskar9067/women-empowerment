@@ -42,18 +42,7 @@
     <p>Together, we can create a future where every rural woman in India has the opportunity to unleash her full potential and contribute to a more prosperous and equitable society. Join us in our journey towards empowerment, inclusion, and positive change.</p>
     <p>Thank you for supporting our mission to uplift and empower rural women across India.</p>
     <hr>
-    <h2>Screenshot</h2>
-    <img src="https://github.com/sanskar9067/women-empowerment/blob/main/Screenshot%20(146).png">
-    <img src="https://github.com/sanskar9067/women-empowerment/blob/main/Screenshot%20(147).png">
-    <img src="https://github.com/sanskar9067/women-empowerment/blob/main/Screenshot%20(148).png">
-    <img src="https://github.com/sanskar9067/women-empowerment/blob/main/Screenshot%20(149).png">
-    <img src="https://github.com/sanskar9067/women-empowerment/blob/main/Screenshot%20(150).png">
-    <img src="https://github.com/sanskar9067/women-empowerment/blob/main/Screenshot%20(156).png">
-    <img src="https://github.com/sanskar9067/women-empowerment/blob/main/Screenshot%20(151).png">
-    <img src="https://github.com/sanskar9067/women-empowerment/blob/main/Screenshot%20(152).png">
-    <img src="https://github.com/sanskar9067/women-empowerment/blob/main/Screenshot%20(153).png">
-    <img src="https://github.com/sanskar9067/women-empowerment/blob/main/Screenshot%20(154).png">
-    <img src="https://github.com/sanskar9067/women-empowerment/blob/main/Screenshot%20(155).png">
-    <img src="https://github.com/sanskar9067/women-empowerment/blob/main/Screenshot%20(157).png">
+    <h2>Live Link</h2>
+    <p>https://gramin-udyogini.netlify.app/</p>
 </body>
 </html>
